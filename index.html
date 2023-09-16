@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Video Player</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>YouTube Video Player</h1>
     
     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fkokHdBXYUI?si=coMfsdMbC5rRauxN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <label for="videoLink">Enter YouTube Video Link:</label>
+        <input type="text" id="videoLink" placeholder="Paste YouTube Video Link">
+        <button id="playButton">Play Video</button>
+        <div id="videoPlayer"></div>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
